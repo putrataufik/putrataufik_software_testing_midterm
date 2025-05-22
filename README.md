@@ -2,15 +2,38 @@
 
 A new Flutter project.
 
-## Getting Started
+## Overview
+Ini merupakan aplikasi Flutter sederhana yang menerapkan arsitektur MVVM (Model-View-ViewModel) dan unit testing menggunakan flutter_test serta mockito. Aplikasi ini terintegrasi dengan API autentikasi dari dummyjson.com untuk melakukan proses login, mendapatkan token, dan mengambil data pengguna.
 
-This project is a starting point for a Flutter application.
+## Features
+- Username and password validation
+- Login/logout logic in ViewModel
+- Unit testing with mocking
+- Boundary and negative test cases
 
-A few resources to get you started if this is your first Flutter project:
+## Test Cases
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| TC ID            | Description                           | Status |
+|------------------|---------------------------------------|--------|
+| TC_AUTH_VM_001   | Validate Empty Username               | ✅     |
+| TC_AUTH_VM_002   | Validate Short Password               | ✅     |
+| TC_AUTH_VM_003   | Successful Login                      | ✅     |
+| TC_AUTH_VM_004   | Login with Invalid Credentials        | ✅     |
+| TC_AUTH_VM_005   | Logout Functionality                  | ✅     |
+| TC_AUTH_VM_006   | Username Length Boundary Values       | ✅     |
+| TC_AUTH_VM_007   | Password Length Boundary Values       | ✅     |
+| TC_AUTH_VM_008   | Login with Special Characters         | ✅     |
+| TC_AUTH_VM_009   | Login with SQL Injection Attempt      | ✅     |
+| TC_AUTH_VM_010   | Login with Empty Fields               | ✅     |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## How to Run
+1. **Clone this repo**
+2. Run:
+   flutter pub get
+   flutter test
+   flutter run
+   
+## Use the following test credentials (from DummyJSON API):
+- Username: emilys
+- Password: emilyspass
