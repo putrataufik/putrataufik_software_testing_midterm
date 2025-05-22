@@ -26,6 +26,9 @@ Ini merupakan aplikasi Flutter sederhana yang menerapkan arsitektur MVVM (Model-
 | TC_AUTH_VM_009   | Login with SQL Injection Attempt      | ✅     |
 | TC_AUTH_VM_010   | Login with Empty Fields               | ✅     |
 
+![Screenshot 2025-05-22 104923](https://github.com/user-attachments/assets/4e874971-b46a-46bc-960f-05416ab71615)
+
+
 
 ## How to Run
 1. **Clone this repo**
